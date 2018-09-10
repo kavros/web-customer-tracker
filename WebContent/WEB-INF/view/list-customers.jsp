@@ -5,6 +5,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<title>List customers</title>
+	
+	<!-- reference our css style -->
+	<link type="text/css"
+		  rel="stylesheet"
+		  href="${pageContext.request.contextPath}/resources/css/style.css" />
+			
 </head>
 <body>
 
@@ -15,6 +21,13 @@
 		
 		<div id="container">
 			<div id="content">
+			
+			<!-- put new button: Add customer -->
+			<input type="button" value="Add Customer"
+					onclick="window.location.href='showFormForAdd';return false;"
+					class="add-button"
+			/>
+			
 				<!--  add out html table here -->
 				<table>
 					<tr>
@@ -36,6 +49,6 @@
 			</div>
 		</div>
 	</div>
-
+	
 </body>
 </html>
